@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RxJS Demo</title>
+    <style>
+        body { font-family: 'Arial'; background: lightgray }
+        ul { list-style-type: none; padding: 20px; }
+        li {
+          color: #efefef;
+          padding: 10px;
+          background: darkorange;
+          margin-bottom: 10px;
+          border-radius: 20px;
+          font-size: 20px;
+          width: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .click { background: #333333; font-size: 14px; line-height: 20px}
+        .box {display: flex; width: 90%; justify-content: space-between; margin: 0 5%;}
+    </style>
+</head>
+<body>
+    <h1>RxJS Demo</h1>
+    <p>Click anywhere to start the demo.  Click again to see how the maps change with additional input.</p>
+
+    <div class="box">
+      <div>
+        <h2>Merge Map</h2>
+        <div>
+            <ul id="mergeMap"></ul>
+        </div>
+      </div>
+
+      <div>
+        <h2>Switch Map</h2>
+        <div>
+            <ul id="switchMap"></ul>
+        </div>
+      </div>
+
+      <div>
+        <h2>Concat Map</h2>
+        <div>
+            <ul id="concatMap"></ul>
+        </div>
+      </div>
+
+      <div>
+        <h2>Exhaust Map</h2>
+        <div>
+            <ul id="exhaustMap"></ul>
+        </div>
+      </div>
+
+    </div>
+    <script src="/bundle.js"></script>
+</body>
+</html>
